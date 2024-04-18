@@ -1,12 +1,12 @@
 sudo dnf -y install java-11-openjdk-headless
 
-wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.83/bin/apache-tomcat-9.0.83.tar.gz
+wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.88/bin/apache-tomcat-9.0.88.tar.gz
 
 sudo mkdir /opt/tomcat
 sudo mkdir /opt/pegatemp
 sudo tar xvf apache-tomcat-*tar.gz -C /opt/tomcat --strip-components=1
 sudo cp -f context.xml /opt/tomcat/conf/context.xml
-sudo cp -f postgresql-42.0.0.jar /opt/tomcat/lib/postgresql-42.0.0.jar
+sudo cp -f postgresql-42.6.0.jar /opt/tomcat/lib/postgresql-42.6.0.jar
 sudo cp prhelp.war /opt/tomcat/webapps
 sudo cp prweb.war /opt/tomcat/webapps
 
